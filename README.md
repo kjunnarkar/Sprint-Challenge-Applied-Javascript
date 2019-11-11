@@ -30,13 +30,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+The DOM is the "Document Object Model", which is the bridge between content on the webpage and the browser. Thus, the DOM is an API. The DOM represents the entire web page and allows programs to add, delete, and modify content on the web page. The DOM is a language independent interface which represents the whole HTML document as a tree structure where each node represents a part of the document. In other words, all HTML elements are defined as objects. The program or interface is the properties and methods of each object which allows the objects to be modified.
+
 2. What is an event?
+
+Javascript's interaction with HTML is accomplished through events that occur when the user or the browser manipulates the web page. For example, a web page that is loading is an event or a user clicking on a link or button are also events. Events are part of the DOM and every HTML element contains a set of events which can trigger Javascript code to perform some action like displaying messages to the user for example.
 
 3. What is an event listener?
 
+An event listener is a procedure or function in a program that waits for an event to occur. In other words, an event listener waits until the user or browser triggers some event on the web page. The event listener is programmed to react to an input or signal by calling the event's handler. The event handler then performs some action that has been defined programmmatically by the Javascript code. This could be changing the behavior of a button once it has been clicked or redirecting the user to another web page for example.
+
 4. Why would we convert a NodeList into an Array?
 
+NodeList objects are collections of nodes which are usually returned by methods such as document.querySelectorALL(). NodeList is "array-like", not a true array. The Array.from() method can be performed on the nodeList to convert it to a true array so that advanced array methods such as .map, .filter and .reduce can be used.
+
 5. What is a component?
+
+A component is reusable code that can be defined one-time to display contents on the DOM. Adding new content to the DOM can be achieved without the need for repeating code or hardcoding of the "new" content. A function can be invoked and the "new" content quickly added to the DOM using the same "original" code without the need for modification of the code. An advantage of dividing the web page into components makes each "portion or piece" of the web page more manageable and much easier for debugging code.
 
 ### Git Set up
 
